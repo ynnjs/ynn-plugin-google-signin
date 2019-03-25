@@ -1,0 +1,56 @@
+{
+    "name": "ynn-plugin-google-signin",
+    "version": "0.0.0",
+    "description": "Google Sign-in plugin for Ynn",
+    "main": "lib/index.js",
+    "scripts": {
+        "test": "jest --forceExit",
+        "tw": "jest --watch",
+        "test-cov": "jest --coverage --runInBand --forceExit --detectOpenHandles",
+        "lint": "eslint lib --cache --ignore-path .eslintignore",
+        "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ynnjs/ynn-plugin-google-signin.git"
+    },
+    "keywords": [
+        "ynn",
+        "plugin",
+        "google",
+        "signin",
+        "google-signin",
+        "login",
+        "google-login"
+    ],
+    "author": "LvChengbin <lvchengbin59@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ynnjs/ynn-plugin-google-signin/issues"
+    },
+    "homepage": "https://github.com/ynnjs/ynn-plugin-google-signin#readme",
+    "jest": {
+        "testMatch": [
+            "**/test/**/*.spec.js"
+        ],
+        "coverageReporters": [
+            "text-summary",
+            "text",
+            "lcov"
+        ],
+        "collectCoverageFrom": [
+            "lib/**/*.js"
+        ],
+        "testEnvironment": "node"
+    },
+    "devDependencies": {
+        "eslint": "^5.15.3",
+        "jest": "^24.5.0",
+        "nodemon": "^1.18.10",
+        "pre-commit": "^1.2.2",
+        "ynn": "0.0.43"
+    },
+    "dependencies": {
+        "google-auth-library": "^3.1.1"
+    }
+}
